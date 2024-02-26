@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.margin0{
+    margin: 0;
+}
+/*css para el nav*/
+.navbar-nav .nav-link {
+    color: grey;
+}
+.relativo{
+    position: relative;
+}
+.absoluto{
+    position: absolute;
+}
+
+.body{
+    line-height: 8;
+}
+
+/*____________________video pagina principal_____________________________*/
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay; /*obscurece o aclara la capa de manera dinamica dependiendo del color del fondo*/
+
+}
+
+.mensaje{
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+  }
+.mensaje p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #f3f3f3;
+    font-weight: 500;
+}
+/*recordar modificar en el query el espaciado entre lineas para que no se deforme*/
+/*____________________________________________________________________________________________*/
+
+
+/*AQUI VAMOS CON LA PAGINA DE LAS REDES SOCIALES*/
+
+.tarro{
+    top: 15em;
+    left: 5em;
+    width: 12em;
+    height: 12em;
+}
+.left{
+    align-self: self-end;
+}
+.right{
+    align-self: self-start;
+}
+.FONDOREDES{
+    background-image: url("/img/FONDO.jpg");background-repeat: no-repeat;background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+.fondohead{
+    background:linear-gradient(90deg,#26b4b0, #202359);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+.fontsize{
+    font-size: larger;
+}
+.fontsizexl{
+    font-size: x-large;
+}
+#galeria{
+    background-color: rgb(99, 97, 97);
+    border: 1px solid black;
+    margin: auto;
+    display: grid; /*para indicarle que div que vamos a trabajar con la estructura grid*/
+    grid-template-columns: repeat(4, 1fr); /*repeat para decir cuantas columnas queremos y 4 para especiicar el numero de colun, y el 1fr para que todas tengan el mismo tamaño*/
+    grid-auto-rows: 150px; /*tamano de las filas*/
+    padding: 20px; /*margenes internos*/
+    grid-gap: 10px; /*espaciado entre imagenes*/
+}
+.galeria-img{
+    width: 15%;
+    height: 50%;
+    object-fit: cover; /*para que las imagenes no se distorsionen al redimensionarlas*/
+}
+/*-----------------------------contacto---------------------------------*/
+.fondovertical{
+    background:linear-gradient(#202359, #26b4b0);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+/*-------------------------------------------------------------*/
+/*pie de pagina */
+
+.centro{
+    text-align: center;
+    align-items: center;
+}
+.justificado{
+    align-items: center;
+    justify-content: center;
+}
+
+.pl{
+    padding-left: 5px;
+}
+.ml{
+    margin-left: 28em;
+}
+.ml1{
+    margin-left: 12em;
+}
+.ml2{
+    margin-left: 0em;
+    
+}
+@media (min-width:1024px) { /*aqui modificamos la apariencia segun el dispositivo en donde se este observando la pagina*/
+    #galeria{
+    grid-template-columns: repeat(4, 1fr);
+    }
+    .galeria-item:nth-child(1){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    .galeria-item:nth-child(2){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }    
+    .galeria-item:nth-child(3){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    
+    }
+    .galeria-item:nth-child(4){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }    
+    .galeria-item:nth-child(5){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }
+    .galeria-item:nth-child(6){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }    
+    .galeria-item:nth-child(7){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }    
+    .galeria-item:nth-child(8){
+        grid-column-start: span 1;
+        grid-row-start: span 1;
+    }    
+    .galeria-img{
+        width: 15%;
+        height: 35%;
+        object-fit: cover; /*para que las imagenes no se distorsionen al redimensionarlas*/
+    }
+}
+
+
+
+
+
+
+.verBorde{
+    border: 10px solid rgb(245, 229, 5);
+}
+li:hover{
+    background-color: rgb(180, 177, 177);
+    font-size: 120%;
+    border-radius: 15px;
+}
+.bordebasico{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px rgba(15, 15, 15, .5);
+}
+.degradado{
+    /*background:linear-gradient(90deg, grey, black);*/
+    background-color: #dedce1;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+.fondoPrincipal{
+    background-color: grey;
+}
+.test{
+    color: brown;
+}
+/*----------------------------tamaños de fuestes-------------------------------------------------*/
+.a1{
+    color: white;
+    padding-top: 1em;
+}
+.a2{
+    text-align: justify;
+    font-size: small;
+}
+.a3{ /*usado nombre de pagina*/
+    color:rgb(255, 255, 255)
+}
+.a4{
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.a5{
+    font-size: x-large;
+    color: yellow;
+}
+.a6{
+    text-align: center;
+    font-size: small;
+}
+.nolink{
+    text-decoration: none;
+}
+.foto{
+    
+    width: 75%vw;
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;
+}
+.formulario{
+    
+    width: 75%vw;
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15, 15, 15, .5);
+}
+
+@media screen and (min-width: 720px) {
+    .formulario {
+        width: 48%; /* Cambia el valor según tu diseño */
+        max-width: none;
+        min-width: none;
+        margin: 0 4%;
+        float: left;
+        max-width: 400px;
+        min-width: 320px;
+        margin-top: 0%;
+    }
+    .foto {
+        width: 48%; /* Cambia el valor según tu diseño */
+        max-width: none;
+        min-width: none;
+        margin-left: 25%;
+        float: left;
+        max-width: 600px;
+        min-width: 320px;
+    }
+    .galeria-img{
+        width: 15%;
+        height: 35%;
+        object-fit: cover; /*para que las imagenes no se distorsionen al redimensionarlas*/
+    }
+    
+}
+
+@media screen and (max-width: 720px) { /*este es para cuando estamos en moviles*/
+    nav{
+        font-size: 15px;
+        
+    }
+    .navbar-nav .nav-link {
+        color:#26b4b0;
+    }
+    
+    .galeria-img{
+        width: 25%;
+        height: 35%;
+        object-fit: cover; /*para que las imagenes no se distorsionen al redimensionarlas*/
+    }
+}
