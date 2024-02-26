@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Finanzas</title>
 </head>
-<body class="fondovertical">
+<body class="fondoPrincipal">
+      
     <div class="container-fluid fondohead fontsize"> <!---->
       <nav class="navbar navbar-expand-lg navbar-light border-bottom border-secundary"><!---->
         <div class="container-fluid">
@@ -17,13 +19,13 @@
             <div id="menunavegacion" class="collapse navbar-collapse">
               <ul class="navbar-nav ms-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="/index.html">INICIO</a>
+                  <a class="nav-link" href="#">INICIO</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/html/redes sociales.html">REDES SOCIALES</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACTO</a>
+                  <a class="nav-link" href="/html/comunicacion.html">CONTACTO</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/html/Regalos.html">REGALO</a>
@@ -33,70 +35,56 @@
           </nav>
         </div>
     </div>
-  <!--HASTA AQUI IRIA EL NAV-->
+    
+<!--seccion del video de fondo y letras centrales-->
+  <main id="hero">
+      <video autoplay loop muted>
+      <source src="/videos/fondo-video3.mp4"
+      type="video/mp4">
+    </video>
   
+
+  <div class="capa"></div>
+
+
+
+  <div class="mensaje body">
+    <h1>A veces el tan solo querer ahorrar no es suficiente, tambien hay que saber hacerlo</h1>
+
+    <p> aqui te enseñaré a llevar de la mano la economia y las emociones que suelen afectar el proceso del Ahorro </p>
+
+    <button> calendario
+      h
+    </button>
+
+  </div>
   
-          <div class="container-fluid fondohead vw-100">
-              <p class="text-center a1">APRENDE A EXPLOTAR TUS POSIBILIDADES</p>
-              <h1 class="text-center a3">tus emociones de la mano con tu "GUIÑO GUIÑO"</h1>
-          </div>
-          <div class=" container-fluid col-md-4 ">
-              <img class="fotografia col-sd-2" src="/img/foto victor contacto.jpg" alt="imagen principal de victor">
-          </div>
-          <div class="container-fluid" id="contacto">
-  
-              <p class="centro a3 fontsizexl ">aqui iria la via para que comuniquen contigo</p>
-              <P class="centro a3 fontsizexl ">no lo pongo porque este sitio es un servicio gratuito y piensa que es para vainas raras y elimina el sitio</P>
-              <p class="centro a3 fontsizexl ">ya con un host pago y dominio propio se puede subir tranquilo</p>
-              <form method='POST'>
-                  <h1>comunicate ahora</h1>
-                  <div class="form-group">
-                      <label for="nombre">Nombre</label>
-                      <input type="text" class="form-control" name='nombre' id="nombre" placeholder="nombre...">
-                  </div>
-                  <div class="form-group">
-                      <label for="telf">telefono</label>
-                      <input type="text" class="form-control" name='telefono' id="telefono" placeholder="telefono...">
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" name='email' id="email" placeholder="email...">
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleTextarea">Mensaje</label>
-                      <textarea class="form-control" name='mensaje' id="mensaje" rows="3"></textarea>
-                  </div>
-                  <div class="form-group">
-                      <input type="checkbox" required> Acepto la política de privacidad.
-                  </div>
-                  <button class="btn btn-primary" type="submit">Enviar</button>
-              </form>
-          </div>
-  
-  
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+
+
+
+  <footer>
+    <div class="container-fluid centro fondohead">
+      <div class="container-fluid row p-3 fontsize text-white pl">
+        <div class="col-xs-12 col-md-6 col-lg-4 ">
+            <p class="h3">AHORRO EMOCIONAL</p>
+            <p class="a2 ml1 centro">Mi prioridad es tu bienestar</p>
+            <P class="a2 ml1 centro">Juntos conseguiremos tus objetivos</P>
+            <P class="a2 ml1 centro">Solo es mirar dentro de ti</P>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <p>Pagina web inicial @copy</p>
+            <a href="https://www.google.com" class="a2 a3 nolink">Fondos</a>
+            
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <p>Roberto Alvarado</p>
+        </div>
       </div>
       
-  
-      <div class="container-fluid centro fondohead">
-        <div class="container-fluid row p-3 fontsize text-white pl">
-          <div class="col-xs-12 col-md-6 col-lg-4 ">
-              <p class="h3">AHORRO EMOCIONAL</p>
-              <p class="a2 ml1 centro">Mi prioridad es tu bienestar</p>
-              <P class="a2 ml1 centro">Juntos conseguiremos tus objetivos</P>
-              <P class="a2 ml1 centro">Solo es mirar dentro de ti</P>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-              <p>Pagina web inicial @copy</p>
-              <a href="https://www.google.com" class="a2 a3 nolink">Fondos</a>
-              
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-4">
-              <p>Roberto Alvarado</p>
-          </div>
-        </div>
-        
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+    </div>
+  </footer>
 </body>
 </html>
